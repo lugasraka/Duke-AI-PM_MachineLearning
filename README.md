@@ -82,5 +82,6 @@ pip install pandas numpy matplotlib seaborn scikit-learn openpyxl
 - Model monitoring with residual analysis and drift detection in production.
 
 ## License
-This repository is for educational and demonstration purposes. Add a specific license if you plan to distribute or reuse the code and data.
+This repository is for educational and demonstration purposes.
+
 
