@@ -1,7 +1,10 @@
 # Combined Cycle Power Plant Power Output Prediction
 
 ## Overview
-This project predicts the full-load electrical power output (PE, in MW) of a base-load operated Combined Cycle Power Plant (CCPP) using machine learning. The work explores multiple modeling approaches, evaluates their performance with robust metrics, and interprets results to derive actionable business insights.
+This project predicts the full-load electrical power output (PE, in MW) of a base-load operated Combined Cycle Power Plant (CCPP) using machine learning. The work explores multiple modeling approaches, evaluates their performance with robust metrics, and interprets results to derive actionable business insights. This project was performed as part of the AI Product Management Specialization on Coursera.
+
+<img width="1373" height="611" alt="{AE08527D-BD08-4952-AA42-77E7342B35C9}" src="https://github.com/user-attachments/assets/b792adf9-be79-4ef8-9565-0abea67740e3" />
+
 
 - Product goal: Provide reliable and interpretable predictions of PE to support operations planning, capacity management, and efficiency optimization.
 - Problem statement: Given ambient and process conditions — Ambient Temperature (AT), Atmospheric Pressure (AP), Relative Humidity (RH), and Vacuum/Exhaust Steam Pressure (V) — predict PE accurately and efficiently for unseen conditions.
@@ -42,6 +45,9 @@ Key observations drawn from the notebook’s analysis:
 - Random Forest generally provides the best bias-variance tradeoff, reflected in strong R² and RMSE, and stable cross-validation performance.
 - Scatter plots of actual vs. predicted values show tighter clustering around the parity line for multi-feature models and Random Forest, indicating better calibration.
 
+<img width="1191" height="989" alt="image" src="https://github.com/user-attachments/assets/a121f334-52db-4204-8e0c-6c00608bd9b7" />
+
+
 ## Business Insights
 - Operational planning: Use predicted PE to schedule generation commitments, anticipate shortfalls during high AT conditions, and plan reserve margins.
 - Efficiency optimization: Monitor conditions (AT, V, AP, RH) to adjust operating setpoints aiming to mitigate performance degradation (e.g., inlet air cooling during hot periods).
@@ -77,3 +83,4 @@ pip install pandas numpy matplotlib seaborn scikit-learn openpyxl
 
 ## License
 This repository is for educational and demonstration purposes. Add a specific license if you plan to distribute or reuse the code and data.
+
