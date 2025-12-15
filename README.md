@@ -47,6 +47,14 @@ Key observations drawn from the notebook’s analysis:
 
 <img width="1191" height="989" alt="image" src="https://github.com/user-attachments/assets/a121f334-52db-4204-8e0c-6c00608bd9b7" />
 
+## Performance Comparison
+| Model                    | MAE      | MAPE     | RMSE     | R^2      | Training Time (s) | Avg Cross-Validation Score |
+| ------------------------ | -------- | -------- | -------- | -------- | ----------------- | -------------------------- |
+| Model 1 - Simple LR      | 4.342788 | 0.960611 | 5.540415 | 0.895652 | 0.006418          | 0.898824                   |
+| Model 2 - Multi LR       | 3.693925 | 0.814452 | 4.714868 | 0.924432 | 0.009809          | 0.928538                   |
+| Model 3 - Decision Trees | 3.177227 | 0.701139 | 4.713837 | 0.924465 | 0.030185          | 0.927666                   |
+| Model 4 - Random Forest  | 2.513829 | 0.55406  | 3.638481 | 0.954997 | 1.859844          | 0.962134                   |
+
 
 ## Business Insights
 - Operational planning: Use predicted PE to schedule generation commitments, anticipate shortfalls during high AT conditions, and plan reserve margins.
@@ -83,5 +91,6 @@ pip install pandas numpy matplotlib seaborn scikit-learn openpyxl
 
 ## License
 This repository is for educational and demonstration purposes.
+
 
 
